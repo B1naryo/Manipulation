@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogos de Poder:</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        nav {
+            background-color: #333;
+            padding: 10px 0;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        nav ul li a:hover {
+            background-color: #555;
+        }
+        h1 {
+            text-align: center;
+        }
+    </style>
+    <script>
+        function exibirPDF(caminhoPDF) {
+            document.getElementById("pdfViewer").src = caminhoPDF;
+        }
+    </script>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a onclick="exibirPDF('as-48-leis-do-poder-robert-greene.pdf')">As 48 Leis do Poder</a></li>
+            <li><a onclick="exibirPDF('Como-Fazer-Amigos-Influenciar-Pessoas-Dale-Carnegie-z-lib.org_.pdf')">Como Fazer Amigos e Influenciar Pessoas</a></li>
+            <li><a onclick="exibirPDF('o-poder-da-persuasc3a3o-r.-cialdini.pdf')">O Poder da Persuasão</a></li>
+        </ul>
+    </nav>
+    <h1>Power Games</h1>
+    <iframe id="pdfViewer" src="" width="100%" height="800" frameborder="0" scrolling="auto"></iframe>
+</body>
+</html>
+
